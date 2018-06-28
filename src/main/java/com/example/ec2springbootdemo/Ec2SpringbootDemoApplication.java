@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Ec2SpringbootDemoApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Ec2SpringbootDemoApplication started");
 		SpringApplication.run(Ec2SpringbootDemoApplication.class, args);
 	}
 	@GetMapping("/api/msg/{name}")
@@ -18,3 +19,5 @@ public class Ec2SpringbootDemoApplication {
 		return name +" Welcome in the EC2 Instance world";
 	}
 }
+
+
